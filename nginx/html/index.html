@@ -1,9 +1,16 @@
 <!doctype html><html lang="ko"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1"><title>나의 캡스톤 소개</title><link rel="stylesheet" href="style.css"><script defer src="app.js"></script></head>
-<body><main><header><p class="eyebrow">WEEK 5 · CAPSTONE</p><h1 id="project-title">TODO: 프로젝트 이름</h1><p>누적 조회수 <strong id="view-count">불러오는 중</strong></p></header>
+<body><main><header><p class="eyebrow">WEEK 5 · CAPSTONE</p><h1 id="project-title">GoodsRun (굿즈런)</h1><p>누적 조회수 <strong id="view-count">불러오는 중</strong></p></header>
 <!-- TODO: AI를 활용해 디자인과 소개 내용을 완성하세요. 아래 id는 API 연결에 사용하므로 유지하세요. -->
-<section><h2>프로젝트 소개</h2><p id="project-summary">TODO: 프로젝트 목적과 해결할 문제를 소개하세요.</p></section>
-<section><h2>주요 기능</h2><div id="project-features">TODO: 주요 기능을 구체적으로 작성하세요.</div></section>
-<section><h2>사용 기술</h2><p id="project-technology">TODO: 사용 기술과 역할을 적으세요.</p></section>
-<section><h2>팀 소개</h2><p>TODO: 팀원과 역할을 작성하세요.</p></section>
+<section><h2>프로젝트 소개</h2><p id="project-summary">GoodsRun은 무신사 스타일의 감각적인 UI와 부드러운 애니메이션을 결합한 한정판 굿즈 이터머스 플랫폼입니다. 핵심 기능에 집중하여 빠르고 직관적인 쇼핑 경험을 제공하며, 서버 단의 철저한 시간 검증을 통해 공정한 한정판 타임 드롭(Limited Drop) 시스템을 구현했습니다.</p></section>
+<section><h2>주요 기능</h2><div id="project-features">
+  <ul>
+    <li><strong>한정판 타임 드롭 & 서버 검증:</strong> 오픈 시간을 실시간 카운트다운 타이머로 제공하며, 백엔드 단에서 오픈 시간 전의 비정상적인 구매 요청을 원천 차단합니다.</li>
+    <li><strong>상품 후기 및 찜(좋아요) 시스템:</strong> 5점 만점 별점 평가와 20자 이상 작성 검증이 포함된 무신사 스타일 후기 작성 및 찜 리스트 연동 기능을 제공합니다.</li>
+    <li><strong>최근 본 상품 & 마이페이지 연동:</strong> localStorage를 활용한 최근 본 상품 기록과 사용자의 주문 내역 및 후기 작성 페이지를 다이나믹 라우팅으로 연결합니다.</li>
+    <li><strong>관리자 상품 관리:</strong> 관리자 페이지를 통해 상품 등록, 수정, 삭제 및 드롭 시간 설정 등 플랫폼 운영을 유연하게 제어할 수 있습니다.</li>
+  </ul>
+</div></section>
+<section><h2>사용 기술</h2><p id="project-technology"><strong>Backend:</strong> Java, Spring Boot, Spring Data JPA, MySQL, AWS EC2<br><strong>Frontend:</strong> React, Vite, Tailwind CSS / Custom CSS, Vercel<br><strong>역할:</strong> Spring Boot 기반 백엔드 REST API 설계 및 비즈니스 로직(주문, 드롭 검증 등) 구현, React 프론트엔드 UI 컴포넌트 개발 및 Vercel/EC2 배포 연동</p></section>
+<section><h2>팀 소개</h2><p><strong>팀원:</strong> 민규 (Full-stack Developer)<br><strong>역할:</strong> 굿즈런 플랫폼 기획, 프론트엔드 UI/UX 구현, 백엔드 서버 구축 및 데이터베이스 연동 총괄</p></section>
 <button id="download-button">소개 내용 다운로드 (.md)</button><button id="refresh-views">조회수 다시 확인</button><p id="message" class="result" aria-live="polite"></p>
 <footer><a href="/api/health">API 연결 확인</a><p>페이지를 열거나 새로고침하면 조회수가 증가합니다.</p></footer></main></body></html>
